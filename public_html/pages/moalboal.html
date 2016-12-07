@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="utf-8"/>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../cebuIcon.ico" />
+<link rel="stylesheet" type="text/css" href="../css/homestylesheet.css" />
+<title>Moalboal Beach</title>
+</head>
+<body>
+<div class="divHead">
+<div class="divBanner">
+<h1>Excelsior Tours</h1>
+</div>
+<div class="divLogo">
+<img class="logo" src="../Images/etLogo.png" alt="Excelsior Tours">
+</div>
+</div>
+
+<div class="divBackground">
+<div class="sideLinks">
+<div class="sideImage">
+<img id="img1" src="../Images/cebuSeal.gif" alt="cebuLogo">
+</div>
+<a class="left" href="../index.html">Home</a>
+<a class="left" href="alcoy.html">Alcoy Beach</a>
+<a class="left" href="bantayan.html">Bantayan Island</a>
+<a class="left" href="kawasan.html">Kawasan Falls</a>
+<a class="left" href="malapascua.html">Malapascua Island</a>
+</div>
+<div class="divGeography2">
+<h2 class="heading">Moalboal Beach</h2> 
+<div id="alcoy">
+<img class="beaches" alt="Moalboal Beach" title="Moalboal Beach" src="../Images/moalboal2.jpg">
+<p>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Moalboal is a fourth class municipality in the province of Cebu, Philippines. 
+Since the 1970s, Moalboal has developed a tourism industry based on recreational 
+diving and beaches. In Moalboal most tourists stay at either Panagsama Beach(Basdiot) 
+or White beach (Basdako). White Beach is known for its beautiful sandy beach and 
+crystal clear water. There is plenty of accommodation near either beach, although 
+Panagsama has the most bars and restaurants.
+
+<br />
+<br />
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+International tourists visiting Moalboal usually arrive by taxi from Cebu 
+International Airport. The fare is around P3000($75), and the ride takes around 2.5 hours. 
+Other ways to get to Moalboal would be to take a taxi to the Librando bus terminal or the South 
+Bus station across the road. Most Filipinos that go to Moalboal take a cheap bus ride that cost
+around P100($2.50). 
+<br />
+<br />
+Here is a video that shows the beautiful Moalboal beach.
+</p>
+<div class="video">
+<embed width="500" height="350" src="http://www.youtube.com/embed/Hz3zg0TzVao">
+</div>
+<div>
+<p><span id="span2">Fun fact about the island of Cebu</span></p>
+<div id="funfact">
+<button id="buttonDisplay" type="button" onclick="modifyVisibility('pid1')">Click Me!</button>
+<input id="buttonHide" style="visibility:hidden" type="button" value="Hide Fun Fact" onclick="modifyVisibility('pid1')">
+<p id="pid1"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p id="copyright">&copy; All rights reserved 2014 INF 201
+<br>
+The images are taken from
+<br>
+Google Images
+</p>
+</div>
+<script>
+function modifyVisibility(id) 
+{
+	var p = document.getElementById(id);
+	if(p.style.display == 'block')
+    {
+        p.style.display = 'none';
+        document.getElementById('buttonHide').style.visibility = "hidden";
+        document.getElementById('buttonDisplay').style.visibility = "visible";
+    }
+    else
+    {
+		document.getElementById(id).innerHTML ='Cebu City has its own version of Brazil’s Mardi Gras, held every January (The Sinulog Festival).' +
+		'The culminating event of the Sinulog is the Grand Festival, which commemorates the eventual conversion of ancient Filipino pagans to Roman Catholicism.';
+        p.style.display = 'block';
+        document.getElementById('buttonDisplay').style.visibility = "hidden";
+        document.getElementById('buttonHide').style.visibility = "visible";
+    }
+}    
+</script>
+</body>
+</html>
+
+
+<!--https://www.youtube.com/watch?v=Hz3zg0TzVao-->

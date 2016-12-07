@@ -1,0 +1,103 @@
+
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="utf-8"/>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../cebuIcon.ico" />
+<link rel="stylesheet" type="text/css" href="../css/homestylesheet.css" />
+<title>Alcoy Beach</title>
+</head>
+<body>
+<div class="divHead">
+<div class="divBanner">
+<h1>Excelsior Tours</h1>
+</div>
+<div class="divLogo">
+<img class="logo" src="../Images/etLogo.png" alt="Excelsior Tours">
+</div>
+</div>
+
+<div class="divBackground">
+<div class="sideLinks">
+<div class="sideImage">
+<img id="img1" src="../Images/cebuSeal.gif" alt="cebuLogo">
+</div>
+<a class="left" href="../index.html">Home</a>
+<a class="left" href="bantayan.html">Bantayan Island</a>
+<a class="left" href="kawasan.html">Kawasan Falls</a>
+<a class="left" href="malapascua.html">Malapascua Island</a>
+<a class="left" href="moalboal.html">Moalboal Beach</a>
+</div>
+<div class="divGeography2">
+<h2 class="heading">Alcoy Beach</h2> 
+<div id="alcoy">
+<img class="beaches" alt="Alcoy Beach" title="Alcoy Beach" src="../Images/alcoy2.jpg">
+<p>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Alcoy is a fifth class municipality in the province of Cebu.
+It is located in the southern part of Cebu.
+It is named after Alcoy which is a city of Spain. 
+When Spaniards came to the place during the Spanish era, 
+some of them said that the place reminded them of Spanish Alcoy, 
+having a green and lush environment and the simplicity of the 
+place and inhabitants. From then on, the place was called Alcoy.
+<br />
+<br />
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+A popular beach that is located in Alcoy is called Tingko Beach, generally it is called 'Alcoy Beach.'
+Tingko Beach is about more than a mile long beach with pinkish and crystal 
+clear turquoise water lined with coconut palm trees and limestone cliffs. Tingko 
+is great for families or group guests because of its extensive beach and shallow waters that
+offer relaxing environment and fun activities to do. The entrance fee for this beach is only 10 pesos
+(roughly about 25 cents in US currency).
+<br />
+<br />
+ Here is a video that shows Tinko Beach and its various resorts.
+</p>
+<div class="video">
+<embed width="500" height="350" src="https://www.youtube.com/embed/7rwIQc1gYwo">
+</div>
+<div>
+<p><span id="span2">Fun fact about the island of Cebu</span></p>
+<div id="funfact">
+<button id="buttonDisplay" type="button" onclick="modifyVisibility('pid1')">Click Me!</button>
+<input id="buttonHide" style="visibility:hidden" type="button" value="Hide Fun Fact" onclick="modifyVisibility('pid1')">
+<p id="pid1"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer">
+<p id="copyright">&copy; All rights reserved 2014 INF 201
+<br>
+The images are taken from
+<br>
+Google Images
+</p>
+</div>
+<script>
+function modifyVisibility(id) 
+{
+	var p = document.getElementById(id);
+	if(p.style.display == 'block')
+    {
+        p.style.display = 'none';
+        document.getElementById('buttonHide').style.visibility = "hidden";
+        document.getElementById('buttonDisplay').style.visibility = "visible";
+    }
+    else
+    {
+		document.getElementById(id).innerHTML ='Cebu city is the mother of all cities, being the oldest city in the Philippines. ' +
+		 'It was founded as a Spanish Colony in 1565 by Miguel Lopez de Legazpi.';
+        p.style.display = 'block';
+        document.getElementById('buttonDisplay').style.visibility = "hidden";
+        document.getElementById('buttonHide').style.visibility = "visible";
+    }
+}    
+</script>
+</body>
+</html>

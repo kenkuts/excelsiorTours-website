@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="utf-8"/>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../cebuIcon.ico" />
+<link rel="stylesheet" type="text/css" href="../css/homestylesheet.css" />
+<title>Kawasan Falls</title>
+</head>
+<body>
+<div class="divHead">
+<div class="divBanner">
+<h1>Excelsior Tours</h1>
+</div>
+<div class="divLogo">
+<img class="logo" src="../Images/etLogo.png" alt="Excelsior Tours">
+</div>
+</div>
+<div class="divBackground">
+<div class="sideLinks">
+<div class="sideImage">
+<img id="img1" src="../Images/cebuSeal.gif" alt="cebuLogo">
+</div>
+<a class="left" href="../index.html">Home</a>
+<a class="left" href="alcoy.html">Alcoy Beach</a>
+<a class="left" href="bantayan.html">Bantayan Island</a>
+<a class="left" href="malapascua.html">Malapascua Island</a>
+<a class="left" href="moalboal.html">Moalboal Beach</a>
+</div>
+<div class="divGeography2">
+<h2 class="heading">Kawasan Falls</h2> 
+<div id="alcoy">
+<img class="beaches" alt="Kawasan Falls" title="Kawasan Falls" src="../Images/kawasan2.jpg">
+<p>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Kawasan Falls is located in a province of Cebu called Badian. Badian is located in the southern part of the island close to
+Moalboal. Kawasan has many waterfalls. The first one is the largest of the three, and is usually the most crowded. An uphill
+ climb for fifteen minutes will take you to the second falls after that there is third and last waterfall. Its a good idea to 
+ bring in your own food, the resort’s restaurants are not cheap and prices are not marked.
+<br />
+<br />
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Cottages and tables are available for rent, cottages are priced from 1,500 to 2,500 pesos(about $35 - $55)
+ and tables are 500 pesos (about $12), the rooms are also available for overnight stay. You can rent a raft 
+ for 300 pesos(about $8) to take you around the “pool” or for a refreshing “shower massage” under the falling water. 
+ Life vests are also available if needed.
+<br />
+<br />
+ Here is a video that shows the beautiful Kawasan Falls.
+</p>
+<div class="video">
+<embed width="500" height="350" src="https://www.youtube.com/embed/Ti7XN1TNr1w">
+</div>
+<div>
+<p><span id="span2">Fun fact about the island of Cebu</span></p>
+<div id="funfact">
+<button id="buttonDisplay" type="button" onclick="modifyVisibility('pid1')">Click Me!</button>
+<input id="buttonHide" style="visibility:hidden" type="button" value="Hide Fun Fact" onclick="modifyVisibility('pid1')">
+<p id="pid1"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p id="copyright">&copy; All rights reserved 2014 INF 201
+<br>
+The images are taken from
+<br>
+Google Images
+</p>
+</div>
+<script>
+function modifyVisibility(id) 
+{
+	var p = document.getElementById(id);
+	if(p.style.display == 'block')
+    {
+        p.style.display = 'none';
+        document.getElementById('buttonHide').style.visibility = "hidden";
+        document.getElementById('buttonDisplay').style.visibility = "visible";
+    }
+    else
+    {
+		document.getElementById(id).innerHTML ='Cebu City is the hometown of YouTube’s viral sensations – the Cebu Provincial Detention Center and Rehabilitation (CPDRC) Dancing Inmates.' +
+		'The video, which was uploaded in July 2007, features hundreds of inmates dancing to the beat of Michael Jackson’s Thriller.';
+        p.style.display = 'block';
+        document.getElementById('buttonDisplay').style.visibility = "hidden";
+        document.getElementById('buttonHide').style.visibility = "visible";
+    }
+}    
+</script>
+</body>
+</html>
+

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="utf-8"/>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="../cebuIcon.ico" />
+<link rel="stylesheet" type="text/css" href="../css/homestylesheet.css" />
+<title>Bantayan Island</title>
+</head>
+<body>
+<div class="divHead">
+<div class="divBanner">
+<h1>Excelsior Tours</h1>
+</div>
+<div class="divLogo">
+<img class="logo" src="../Images/etLogo.png" alt="Excelsior Tours">
+</div>
+</div>
+<div class="divBackground">
+<div class="sideLinks">
+<div class="sideImage">
+<img id="img1" src="../Images/cebuSeal.gif" alt="cebuLogo">
+</div>
+<a class="left" href="../index.html">Home</a>
+<a class="left" href="alcoy.html">Alcoy Beach</a>
+<a class="left" href="kawasan.html">Kawasan Falls</a>
+<a class="left" href="malapascua.html">Malapascua Island</a>
+<a class="left" href="moalboal.html">Moalboal Beach</a>
+</div>
+<div class="divGeography2">
+<h2 class="heading">Bantayan Island</h2> 
+<div id="alcoy">
+<img class="beaches" alt="Bantayan Island" title="Bantayan Island" src="../Images/bantayan2.jpg">
+<p>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Bantayan is a first class municipality on Bantayan island in the province of Cebu. It is situated to the 
+west of the northern end of Cebu Island. It is the island's most populous and largest town.
+Bantayan Island is a butterfly-shaped island in the Philippines. It has other 
+numerous satellite and smaller islands that are best for snorkeling, diving, swimming or just 
+relaxing. That means you need to be armed with snorkel gears, diving gears, fishing tools, among 
+other fun sea water sports and activities.
+<br />
+<br />
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+The beaches are clean and the water is amazing.
+You can scuba dive, swim, snorkel, kayak, boat, ski and any sort of fun water sports. 
+Since the island offers so much, not only to 
+locals but also to all visitors, more resorts are being established to cater the needs of the guests.
+
+<br />
+<br />
+ Here is a video that shows how to get to Bantayan from Cebu City and its various resorts.
+</p>
+<div class="video">
+<embed width="500" height="350" src="https://www.youtube.com/embed/GQ-vVKIuF1g">
+</div>
+<div>
+<p><span id="span2">Fun fact about the island of Cebu</span></p>
+<div id="funfact">
+<button id="buttonDisplay" type="button" onclick="modifyVisibility('pid1')">Click Me!</button>
+<input id="buttonHide" style="visibility:hidden" type="button" value="Hide Fun Fact" onclick="modifyVisibility('pid1')">
+<p id="pid1"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p id="copyright">&copy; All rights reserved 2014 INF 201
+<br>
+The images are taken from
+<br>
+Google Images
+</p>
+</div>
+<script>
+function modifyVisibility(id) 
+{
+	var p = document.getElementById(id);
+	if(p.style.display == 'block')
+    {
+        p.style.display = 'none';
+        document.getElementById('buttonHide').style.visibility = "hidden";
+        document.getElementById('buttonDisplay').style.visibility = "visible";
+    }
+    else
+    {
+		document.getElementById(id).innerHTML ='In the island of Cebu is where you can find the oldest school in the Philippines and<br/> Asia – the University of San Carlos. ' +
+		 'It was established by the Jesuits in 1565, formerly as the Colegio de San Ildefonso.';
+        p.style.display = 'block';
+        document.getElementById('buttonDisplay').style.visibility = "hidden";
+        document.getElementById('buttonHide').style.visibility = "visible";
+    }
+}    
+</script>
+</body>
+</html>
